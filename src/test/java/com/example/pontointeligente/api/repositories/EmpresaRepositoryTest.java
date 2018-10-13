@@ -2,6 +2,8 @@ package com.example.pontointeligente.api.repositories;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.Date;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +17,7 @@ import com.example.pontointeligente.api.entities.Empresa;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@ActiveProfiles("teste")
+@ActiveProfiles("test")
 public class EmpresaRepositoryTest {
 	
 	@Autowired

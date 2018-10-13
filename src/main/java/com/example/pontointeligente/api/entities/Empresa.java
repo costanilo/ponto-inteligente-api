@@ -70,7 +70,7 @@ public class Empresa implements Serializable {
 		this.dataCriacao = dataCriacao;
 	}
 	
-	@Column(name = "data_atuaizacao", nullable = false)
+	@Column(name = "data_atualizacao", nullable = false)
 	public Date getDataAtualizacao() {
 		return dataAtualizacao;
 	}
