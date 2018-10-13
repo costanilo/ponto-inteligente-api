@@ -53,7 +53,7 @@ public class Empresa implements Serializable {
 	}
 	
 	@Column(name = "cnpj", nullable = false)
-	public String getCnpj(String cnpj) {
+	public String getCnpj() {
 		return cnpj;
 	}
 	
