@@ -3,5 +3,3 @@ jdk:
   - oraclejdk8
 before_install:
   - chmod +x mvnw
-env:
-  SPRING_PROFILES_ACTIVE: test
