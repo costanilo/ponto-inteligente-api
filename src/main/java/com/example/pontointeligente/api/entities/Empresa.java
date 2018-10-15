@@ -16,12 +16,14 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
+
+
 @Entity
 @Table(name = "empresa")
 public class Empresa implements Serializable {
 
 	private static final long serialVersionUID = 7136302106222149165L;
-	
+
 	private long id;
 	private String razaoSocial;
 	private String cnpj;
@@ -44,7 +46,7 @@ public class Empresa implements Serializable {
 	}
 	
 	@Column(name = "razao_social", nullable = false)
-	public String getRazaoSocial(String razaoSocial) {
+	public String getRazaoSocial() {
 		return razaoSocial;
 	}
 	
@@ -62,7 +64,7 @@ public class Empresa implements Serializable {
 	}
 	
 	@Column(name = "data_criacao", nullable = false)
-	public Date getDataCriacao(Date dataCriacao) {
+	public Date getDataCriacao() {
 		return dataCriacao;
 	}
 	
@@ -96,8 +98,8 @@ public class Empresa implements Serializable {
 	@PrePersist
 	public void prePersist() {
 		final Date atual = new Date();
-		dataCriacao = atual;
-		dataAtualizacao = atual;
+        dataCriacao = atual;
+        dataAtualizacao = atual;
 	}
 	
 	@Override
